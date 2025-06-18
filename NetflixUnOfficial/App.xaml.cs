@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace NetflixUnOfficial
+namespace MaxUnOfficial
 {
     /// <summary>
     /// Interaction logic for App.xaml

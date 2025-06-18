@@ -3,16 +3,16 @@ using System.Windows;
 using Microsoft.Web.WebView2.Core;
 using ModernWpf.Controls;
 
-namespace NetflixUnOfficial
+namespace MaxUnOfficial
 {
     /// <summary>
-    /// Interaction logic for NetflixShell.xaml
+    /// Interaction logic for MaxShell.xaml
     /// </summary>
-    public partial class NetflixShell : Window
+    public partial class MaxShell : Window
     {
         private WindowState windowState;
 
-        public NetflixShell()
+        public MaxShell()
         {
             InitializeComponent();
             InitializeAsync();
@@ -25,7 +25,7 @@ namespace NetflixUnOfficial
             WebView.CoreWebView2.Settings.IsStatusBarEnabled = false;
             WebView.CoreWebView2.ContainsFullScreenElementChanged += CoreWebView2OnContainsFullScreenElementChanged;
 
-            WebView.CoreWebView2.Navigate("https://www.netflix.com/");
+            WebView.CoreWebView2.Navigate("https://www.max.com/");
         }
 
 
@@ -157,12 +157,12 @@ document.getElementsByTagName('body')[0].appendChild(style);";
 
         private void Toggle_DeveloperPage(object sender, RoutedEventArgs e)
         {
-            WebView.CoreWebView2.Navigate("https://github.com/RaoHammas/Netflix");
+            WebView.CoreWebView2.Navigate("https://github.com/0r17/max");
         }
 
-        private void Refresh_Netflix(object sender, RoutedEventArgs e)
+        private void Refresh_Max(object sender, RoutedEventArgs e)
         {
-            WebView.CoreWebView2.Navigate("https://www.netflix.com/");
+            WebView.CoreWebView2.Navigate("https://www.max.com/");
         }
     }
 }

@@ -5,29 +5,36 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
-    <StartupObject>NetflixUnOfficial.App</StartupObject>
+    <StartupObject>MaxUnOfficial.App</StartupObject>
     <Description>Unofficial Netflix app made by Rao Hammas Hussain| +92 3068513103 | Pakistan</Description>
-    <RepositoryUrl>https://github.com/RaoHammas/Netflix</RepositoryUrl>
-    <PackageTags>Netflix</PackageTags>
+    <RepositoryUrl>https://github.com/0r17/max</RepositoryUrl>
+    <PackageTags>Max</PackageTags>
     <PackageProjectUrl>https://github.com/RaoHammas/Netflix</PackageProjectUrl>
 	  <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
-	  <AssemblyName>Netflix</AssemblyName>
+	  <AssemblyName>MaxApp</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\NetflixAnimation.gif" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Resources\NetflixAnimation.gif">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Remove="Resources\icon.ico" />
+    <None Remove="Resources\MaxAnimatio.gif" />
+    <None Remove="Resources\MaxAnimation.gif" />
+    <None Remove="Resources\MaxIconAnimation.gif" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.902.49" />
     <PackageReference Include="ModernWpfUI" Version="0.9.4" />
     <PackageReference Include="WpfAnimatedGif" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\icon.ico" />
+    <Resource Include="Resources\MaxAnimation.gif">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\MaxIconAnimation.gif">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
